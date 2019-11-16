@@ -20,7 +20,7 @@ projectBtn2.addEventListener("mouseleave", () => applyMargin(false,2));
 
 window.onscroll = () => appearOnScrool()
 
-hide = [document.getElementById("project1")]
+hide = [document.getElementById("project1"),document.getElementById("project2"),document.getElementById("project3")]
 
 const makeAppear = (x) => {
   if ( x == null ) return;
