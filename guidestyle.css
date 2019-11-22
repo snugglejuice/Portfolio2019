@@ -150,6 +150,9 @@ footer {
   justify-content:center;
   align-items:center;
 }
+.body__img__container--blue {
+  background-color: #5CA9DA;
+}
 
 .body__row {
   display: flex;
@@ -184,6 +187,10 @@ footer {
   font-style: italic;
   font-weight: normal;
   font-size: 16px;
+}
+
+.caption--center {
+  text-align: center;
 }
 
 .center {
@@ -442,13 +449,55 @@ font-size: 14px;
   font-size: 18px;
 }
 
-.role__container__title {
+
+.project__content__quote {
+    background-color: var(--black);
+    display:flex;
+    justify-content:center;
+    align-items:center
+}
+
+.project__content__quote p {
   font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.project__navigation {
+  background-color: var(--background);
+  padding-top: 1.5%;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  overflow: hidden;
+}
+
+
+.role__container__title {
+  font-family: 'Karla';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .project__content--offset {
+  padding-top: 60px;
+}
 
 .shadow-pop-bl {
 	animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
@@ -537,46 +586,15 @@ font-size: 14px;
   text-align: center;
 }
 
-.project__content__quote {
-    background-color: var(--black);
-    display:flex;
-    justify-content:center;
-    align-items:center
-}
-
-.project__content__quote p {
-  font-family: Karla;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.project__navigation {
-  background-color: var(--background);
-  padding-top: 1.5%;
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items:center;
-  overflow: hidden;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .project__content--offset {
-  padding-top: 60px;
-}
-
 .w--35 {
   width: 35%;
 }
 
 #projectimg2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#project_1_gif {
+  width: 15%;
+  padding: 5%
 }

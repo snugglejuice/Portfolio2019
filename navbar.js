@@ -18,17 +18,21 @@ const makeAppear = (x) => {
   }
 }
 
+if (navbar != null) {
+  var sticky = navbar.offsetTop;
+}
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (navbar != null) {
     // Get the offset position of the navbar
-    var sticky = navbar.offsetTop;
+    console.log(sticky) ;
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky")
     } else {
-      navbar.classList.remove("sticky");
+      navbar.classList.remove("sticky")
     }
   }
+
   for (let item of highlight) {
     makeAppear(item)
   }
