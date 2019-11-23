@@ -241,6 +241,10 @@ font-size: 14px;
   color:var(--background);
 }
 
+.marginbt--2 {
+  margin-bottom:2%;
+}
+
 .nav__link {
   font-family: 'Rubik';
   font-style: normal;
@@ -442,13 +446,12 @@ font-size: 14px;
   font-size: 24px;
 }
 
-.project__content__text,ul {
+.project__content__text,ul,ol {
   font-family: 'Karla';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
 }
-
 
 .project__content__quote {
     background-color: var(--black);
@@ -475,7 +478,6 @@ font-size: 14px;
   align-items:center;
   overflow: hidden;
 }
-
 
 .role__container__title {
   font-family: 'Karla';
@@ -524,6 +526,10 @@ font-size: 14px;
     box-shadow: -1px 1px var(--yellow), -2px 2px var(--yellow), -3px 3px var(--yellow), -4px 4px var(--yellow), -5px 5px var(--yellow), -6px 6px var(--yellow), -7px 7px var(--yellow), -8px 8px var(--yellow);
     transform: translateX(8px) translateY(-8px);
   }
+}
+
+.text__list li{
+  margin: 2% auto;
 }
 
 .highlight {
