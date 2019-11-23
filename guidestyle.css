@@ -241,8 +241,16 @@ font-size: 14px;
   color:var(--background);
 }
 
+.margin--5 {
+  margin: 5% auto;
+}
+
 .marginbt--2 {
   margin-bottom:2%;
+}
+
+.margint--0 {
+  margin-top: 0;
 }
 
 .nav__link {
@@ -489,6 +497,16 @@ font-size: 14px;
 .row {
   display: flex;
   flex-direction: row;
+}
+
+.row__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row__img img {
+  margin: .5%;
 }
 
 .sticky {
