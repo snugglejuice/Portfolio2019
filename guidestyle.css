@@ -99,7 +99,7 @@ footer {
   border: solid 4px black;
   padding: 2%;
   margin-top: 5%;
-  width: 57%;
+  width: 65%;
   text-align: center;
 }
 
@@ -128,12 +128,15 @@ footer {
 }
 
 .about__text__container {
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
 
 .about__img {
+  object-fit: cover;
   margin-right: 5%;
+  width: 50%;
 }
 
 .body__img {
@@ -621,4 +624,45 @@ font-size: 14px;
 #project_1_gif {
   width: 15%;
   padding: 5%
+}
+
+
+/**************************     RESPONSIVE    *********************************/
+
+/* Demi-ecran & tablet */
+@media (min-width: 425px) and (max-width: 940px) {
+  .about__button {
+    width: 100%;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+
+  .nav__container__link {
+    width: 30%;
+  }
+
+  .nav__container__link--45{
+    width: 90%;
+  }
+}
+
+/* Phone */
+@media (min-width: 0px) and (max-width: 425px) {
+  .about__button {
+    width: 100%;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+
+  .nav__container__link {
+    width: 30%;
+  }
+
+  .nav__container__link--45{
+    width: 90%;
+  }
 }
