@@ -6,16 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="guidestyle.css" />
+    <link rel="stylesheet" type="text/css" href="hamburgers.css" />
 </head>
-<html>
+<html id="overflow">
+
+<section class="menuPanel" id="menu-panel">
   <nav>
       <div class="content nav__container">
           <a href="./index.html"><img class="nav__logo" src="./img/Logo.png"/></a>
-          <div class="nav__container__link">
+      </div>
+  </nav>
+  <div class="menuPanel--center">
+    <div class="content menuPanel__link__container">
+      <div class="menuPanel__link">
+        <a href="./index.html"> Projects </a>
+        <a href="./index.html"> About </a>
+      </div>
+      <div class="menuPanel__social">
+        <a href="./index.html"> mail </a>
+        <a href="./index.html"> LinkedIn </a>
+        <a href="./index.html"> Dribbble </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <nav>
+      <div class="content nav__container">
+          <a href="./index.html"><img class="nav__logo" src="./img/Logo.png"/></a>
+          <div class="nav__container__link"  id="menu--desktop">
               <a class="nav__link nav__link--active" href="./index.html">Projects</a>
               <!-- <a class="nav__link" href="./experiments.html">Experiments</a> -->
               <a class="nav__link" href="./about.html">About</a>
           </div>
+
+          <button id="menuBurgerButton" class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
       </div>
   </nav>
   <section class="presentation">
@@ -30,7 +60,7 @@
       </div>
   </section>
   <section class="project--blue">
-      <div class="content project__container">
+      <div class="content project__container project__container--left">
           <div class="project__text">
               <h3 class="project__subtitle"> Lynkware - Summer 2019</h3>
               <h2> Web Augmented Reality </h2>
@@ -44,7 +74,7 @@
       </div>
   </section>
   <section class="project--yellow hide" id="project1">
-      <div class="content project__container">
+      <div class="content project__container project__container--right">
           <img class="project__img" id="projectimg2" src="./img/project_2.png"/>
           <div class="project__text project__text--right">
               <h3 class="project__subtitle"> School project - IMAC 2019</h3>
@@ -58,7 +88,7 @@
       </div>
   </section>
   <section class="project--blue hide" id="project2">
-      <div class="content project__container">
+      <div class="content project__container project__container--left">
           <div class="project__text">
               <h3 class="project__subtitle"> KLAP Project - IMAC 2019</h3>
               <h2> Vestigium Game</h2>
@@ -72,7 +102,7 @@
       </div>
   </section>
   <section class="project--yellow hide" id="project3">
-      <div class="content project__container">
+      <div class="content project__container project__container--right">
           <img class="project__img" src="./img/project_4.png"/>
           <div class="project__text project__text--right">
               <h3 class="project__subtitle"> Personal project - Summer 2019</h3>
