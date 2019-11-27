@@ -748,6 +748,12 @@ font-size: 14px;
     max-width: 90%;
   }
 
+  .hide {
+    opacity: 1;
+    transform: unset;
+    transition: unset;
+  }
+
   .nav__container__link--45{
     width: 90%;
   }
