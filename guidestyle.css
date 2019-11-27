@@ -454,6 +454,26 @@ font-size: 14px;
   width: 295%;
 }
 
+.project__content__skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 2%;
+
+}
+
+.skill {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    border: 3px solid var(--yellow);
+    margin: 1%;
+    padding: 1% 2%;
+    color: var(--yellow);
+    border-radius: 5px;
+}
+
 .project__content__title {
   font-family: 'Rubik';
   font-style: normal;
@@ -523,7 +543,8 @@ font-size: 14px;
 }
 
 .sticky + .project__content--offset {
-  padding-top: 60px;
+  /*padding-top: 60px;*/
+  padding-top: 0px;
 }
 
 .shadow-pop-bl {
@@ -696,7 +717,7 @@ font-size: 14px;
 /**************************     RESPONSIVE    *********************************/
 
 /* Demi-ecran & tablet */
-@media (min-width: 425px) and (max-width: 940px) {
+@media (min-width: 500px) and (max-width: 940px) {
   .about__button {
     width: 100%;
   }
@@ -715,7 +736,7 @@ font-size: 14px;
 }
 
 /* Phone */
-@media (min-width: 0px) and (max-width: 425px) {
+@media (min-width: 0px) and (max-width: 500px) {
   a {
     font-size: 18px;
   }

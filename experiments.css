@@ -1,0 +1,51 @@
+.experiments {
+  display: flex;
+  justify-content: center;
+}
+
+.experiments__intro {
+  margin-bottom: 5%;
+  height: 50vh;
+}
+
+.experiments__body__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 2%;
+}
+
+.experiments__body__project {
+  width: 25%;
+}
+
+.experiments__body__project img{
+  width: 100%;
+}
+
+.experiments__body__project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiments__title {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--black);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.experiments__type {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 1%;
+}
