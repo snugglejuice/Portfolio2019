@@ -50,15 +50,22 @@ window.ontouch = () => appearOnScrool()
 
 hide = [document.getElementById("project1"),document.getElementById("project2"),document.getElementById("project3")]
 
-const makeAppear = (x) => {
+const makeAppear = (x,offset) => {
   if ( x == null ) return;
-  if (window.pageYOffset >= x.offsetTop-600) {
+  if (window.pageYOffset >= x.offsetTop-offset) {
     x.style.opacity="100%";
     x.style.transform="translateY(0px)"
   }
 }
+
 const appearOnScrool = () => {
   if (isDisplay == false) {
-    hide.forEach( x => makeAppear(x))
+    hide.forEach( x => makeAppear(x,600))
+  }
+}
+
+const appearOnTouch = () => {
+  if (isDisplay == false) {
+    hide.forEach( x => makeAppear(x,0))
   }
 }
