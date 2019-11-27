@@ -646,6 +646,8 @@ font-size: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  opacity: 0.96;
 }
 
 .menuPanel--center {
@@ -806,6 +808,16 @@ font-size: 14px;
     font-size: 14px;
   }
 
+  .cw {
+
+    text-align: right;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+
+ }
   .underline__link {
     font-size: 30px;
   }
