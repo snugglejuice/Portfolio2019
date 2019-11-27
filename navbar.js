@@ -7,7 +7,7 @@ var navbar = document.getElementById("navbar");
 
 
 
-const makeAppear = (x) => {
+const makeAppearHighlight = (x) => {
   if ( x == null ) return;
   if (window.pageYOffset >= x.offsetTop-400) {
     x.style.backgroundPosition="-100% 0";
@@ -34,6 +34,6 @@ function myFunction() {
   }
 
   for (let item of highlight) {
-    makeAppear(item)
+    makeAppearHighlight(item)
   }
 }

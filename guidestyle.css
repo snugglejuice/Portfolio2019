@@ -641,6 +641,7 @@ font-size: 14px;
 
   width: 100%;
   height: 100vh;
+  z-index: 1;
   background-color: var(--background);
 
   display: flex;
@@ -689,6 +690,7 @@ font-size: 14px;
 
 #menuBurgerButton {
   display: none;
+  z-index: 1;
 }
 
 /**************************     RESPONSIVE    *********************************/
@@ -715,16 +717,37 @@ font-size: 14px;
 /* Phone */
 @media (min-width: 0px) and (max-width: 425px) {
   a {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   h2 {
     font-size: 30px;
   }
 
-  .about__text {
-    font-size: 12px;
+  .about__button {
+    width: 90%;
   }
+
+  .about__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about__img {
+    width: 97%;
+  }
+
+  .about__text {
+    font-size: 18px;
+  }
+
+  .about__text__container {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+ }
 
   .about__title {
     font-family: 'Rubik';
@@ -734,17 +757,27 @@ font-size: 14px;
     color: var(--black);
   }
 
-  .about__button {
+  .body__row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .body__techno--5, .body__design {
+    width: 100%;
+    margin-right: unset;
+  }
+
+  .body__text--50 {
     width: 100%;
   }
 
-  .caption {
+  .caption, .project__title__container .caption, .project__content__quote p {
     font-size: 18px;
- }
+  }
 
  .contact__container {
     width: 70%;
- }
+  }
 
   .content {
     max-width: 90%;
@@ -792,6 +825,20 @@ font-size: 14px;
     flex-direction: column;
   }
 
+  .sticky + .project__content--offset {
+    padding-top: 0px;
+
+  }
+  .project__content__intro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project__content__intro__overview {
+    margin-right: 0;
+    width: unset;
+  }
+
   .project__img {
     width: 100%;
   }
@@ -800,12 +847,17 @@ font-size: 14px;
     width: 100%;
  }
 
+ .project__title {
+    height: unset;
+    padding: 10% 0;
+ }
+
  .project__subtitle {
     font-size: 18px;
  }
 
   .role__container__title {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .cw {
@@ -818,6 +870,11 @@ font-size: 14px;
     text-align: center;
 
  }
+
+  .underline--hover:hover {
+    color: var(--black)
+  }
+
   .underline__link {
     font-size: 30px;
   }
@@ -832,6 +889,10 @@ font-size: 14px;
 
   #menuBurgerButton {
     display: inline;
+  }
+
+  #navbar {
+    display: none;
   }
 
 }

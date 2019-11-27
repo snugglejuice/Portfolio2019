@@ -1,14 +1,10 @@
 // Menu burger
 let isDisplay = false;
-let menu = document.getElementById('menu--mobile');
-let panel = document.getElementById('menu-panel');
-
-
-var menu_button = document.getElementById("menuBurgerButton");
+let menu_button = document.getElementById("menuBurgerButton");
 
 menu_button.onclick = function () {
-    var menu = document.getElementById('menu-panel');
-    var overflow = document.getElementById('overflow');
+    let menu = document.getElementById('menu-panel');
+    let overflow = document.getElementById('overflow');
     if (getComputedStyle(menu).display == 'none') {
         menu.setAttribute("style", "display: flex");
         overflow.setAttribute("style", "overflow:hidden");

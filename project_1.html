@@ -6,16 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="guidestyle.css" />
+    <link rel="stylesheet" type="text/css" href="hamburgers.css" />
 </head>
-<html>
+<html id="overflow">
+  <section class="menuPanel" id="menu-panel">
+    <div class="menuPanel--center">
+      <div class="content menuPanel__link__container">
+        <div class="menuPanel__link">
+          <a href="./index.html"> <span class="underline--hover">Projects</span> </a>
+          <a href="./about.html"> <span class="underline--hover">About</span> </a>
+        </div>
+        <div class="menuPanel__social">
+          <a href="./index.html" href="mailto:seminel.marion@gmail.com"> mail </a>
+          <a href="./index.html" href="https://www.linkedin.com/in/marion-s%C3%A9minel/"> LinkedIn </a>
+          <a href="./index.html" href="https://dribbble.com/MarionSeminel"> Dribbble </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <nav>
       <div class="content nav__container">
-          <a href="./index.html"><img class="nav__logo" src="./img/Logo.png"/></a>
-          <div class="nav__container__link">
+          <a class="nav__logo__container" href="./index.html"><img class="nav__logo" src="./img/Logo.png"/></a>
+          <div class="nav__container__link"  id="menu--desktop">
               <a class="nav__link nav__link--active" href="./index.html">Projects</a>
               <!-- <a class="nav__link" href="./experiments.html">Experiments</a> -->
               <a class="nav__link" href="./about.html">About</a>
           </div>
+
+          <button id="menuBurgerButton" class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
       </div>
   </nav>
   <section class="project__title">
@@ -60,7 +84,7 @@
   </section>
   <section class="project__content__quote">
     <p class="content">
-
+      I do think that a significant portion of the population of developed countries, and eventually all countries, will have AR experiences every day, almost like eating three meals a day. It will become that much a part of you. —Tim Cook
     </p>
   </section>
   <nav class="project__navigation" id="navbar">
@@ -178,7 +202,7 @@
         </div>
         <div class="center">
           <p class=" content caption--tiny caption--center">
-            One of the animations realised on After Effect 
+            One of the animations realised on After Effect
           </p>
         </div>
       </section>
@@ -267,5 +291,6 @@
       </section>
       <p class="cw">Web design, development and content © 2019 Marion Séminel</p>
   </footer>
-<script type="text/javascript" src="navbar.js"></script>
+  <script type="text/javascript" src="navbar.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </html>

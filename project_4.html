@@ -6,16 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="guidestyle.css" />
+    <link rel="stylesheet" type="text/css" href="hamburgers.css" />
 </head>
-<html>
+<html id="overflow">
+  <section class="menuPanel" id="menu-panel">
+    <div class="menuPanel--center">
+      <div class="content menuPanel__link__container">
+        <div class="menuPanel__link">
+          <a href="./index.html"> <span class="underline">Projects</span> </a>
+          <a href="./about.html"> <span class="underline">About</span> </a>
+        </div>
+        <div class="menuPanel__social">
+          <a href="./index.html" href="mailto:seminel.marion@gmail.com"> mail </a>
+          <a href="./index.html" href="https://www.linkedin.com/in/marion-s%C3%A9minel/"> LinkedIn </a>
+          <a href="./index.html" href="https://dribbble.com/MarionSeminel"> Dribbble </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <nav>
       <div class="content nav__container">
-          <a href="./index.html"><img class="nav__logo" src="./img/Logo.png"/></a>
-          <div class="nav__container__link">
+          <a class="nav__logo__container" href="./index.html"><img class="nav__logo" src="./img/Logo.png"/></a>
+          <div class="nav__container__link"  id="menu--desktop">
               <a class="nav__link nav__link--active" href="./index.html">Projects</a>
               <!-- <a class="nav__link" href="./experiments.html">Experiments</a> -->
               <a class="nav__link" href="./about.html">About</a>
           </div>
+
+          <button id="menuBurgerButton" class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+
       </div>
   </nav>
   <section class="project__title">
@@ -90,7 +114,7 @@
                 </div>
               </section>
               <section class="center body__content__techno">
-                <div class="content body__row">
+                <div class="body__row">
                     <div class="body__techno--5">
                         <h3 class="project__content__title">Technology</h3>
                         <p class="project__content__text"> Javascript </p>
@@ -135,5 +159,6 @@
       </section>
       <p class="cw">Web design, development and content © 2019 Marion Séminel</p>
   </footer>
-<script type="text/javascript" src="navbar.js"></script>
+  <script type="text/javascript" src="navbar.js"></script>
+  <script type="text/javascript" src="main.js"></script>
 </html>
