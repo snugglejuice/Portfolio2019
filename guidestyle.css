@@ -900,6 +900,10 @@ font-size: 14px;
     font-size: 18px;
   }
 
+  .project__content__intro__role {
+    width: unset;
+ }
+
   .cw {
 
     text-align: right;
