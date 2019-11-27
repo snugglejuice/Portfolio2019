@@ -902,6 +902,7 @@ font-size: 14px;
 
   .project__content__intro__role {
     width: unset;
+    margin-bottom: 2%;
  }
 
   .cw {
