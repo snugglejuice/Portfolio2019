@@ -237,6 +237,12 @@ font-weight: normal;
 font-size: 14px;
 }
 
+.img__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .hide {
   opacity: 0;
   transform: translateY(50px);
@@ -331,6 +337,10 @@ font-size: 14px;
   width: 100%;
 }
 
+.project_3_img--25 {
+  width: 30%;
+}
+
 .project_3_iframe {
   width: 100%;
 }
@@ -412,7 +422,7 @@ font-size: 14px;
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .btn__img {
@@ -482,14 +492,15 @@ font-size: 14px;
 }
 
 .skill {
+    width: fit-content;
     font-family: 'Karla';
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    border: 3px solid var(--yellow);
-    margin: 1%;
-    padding: 1% 2%;
     color: var(--yellow);
+    padding: 1% 2%;
+    margin: 1%;
+    border: 3px solid var(--yellow);
     border-radius: 5px;
 }
 
@@ -553,6 +564,7 @@ font-size: 14px;
 
 .row__img img {
   margin: .5%;
+  width: 25%;
 }
 
 .sticky {
@@ -823,6 +835,15 @@ font-size: 14px;
     max-width: 90%;
   }
 
+  .img__container {
+    flex-direction: column;
+    justify-content: unset;
+  }
+
+  .project_3_img--25 {
+    width: 100%;
+  }
+
   .hide {
     opacity: 1;
     transform: unset;
@@ -939,5 +960,4 @@ font-size: 14px;
   #navbar {
     display: none;
   }
-
 }
